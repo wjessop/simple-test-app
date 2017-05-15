@@ -41,7 +41,7 @@ if ENV.fetch("RAILS_ENV", "development") != "development"
   #
   preload_app!
 
-  pidfile '/var/run/procore_puma.pid'
+  pidfile '/var/run/puma/procore_puma.pid'
 end
 
 port ENV.fetch("PORT") { 3000 }
